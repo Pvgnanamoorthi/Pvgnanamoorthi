@@ -1,0 +1,108 @@
+<section class="projects-container">
+    <!-- Project 1: Left image, Right text -->
+    <div class="project-card">
+        <div class="project-media">
+            <img src="path/to/your/image1.jpg" alt="Project 1 Description">
+            <!-- Or for video -->
+            <!-- <video controls>
+                <source src="path/to/your/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+        </div>
+        <div class="project-content">
+            <h2>Project Title</h2>
+            <p>Detailed description of your project. Explain the techniques used, 
+               challenges faced, and the creative process behind the work.</p>
+            <ul class="project-details">
+                <li>Software: Blender 3.0</li>
+                <li>Rendering: Cycles</li>
+                <li>Duration: 2 weeks</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Project 2: Right image, Left text -->
+    <div class="project-card reverse">
+        <div class="project-media">
+            <img src="path/to/your/image2.jpg" alt="Project 2 Description">
+        </div>
+        <div class="project-content">
+            <h2>Project Title 2</h2>
+            <p>Description for your second project. Keep the layout interesting
+               by alternating the image position.</p>
+            <ul class="project-details">
+                <li>Software: Blender 3.0</li>
+                <li>Rendering: Eevee</li>
+                <li>Duration: 1 week</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<style>
+    .projects-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .project-card {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 4rem;
+        align-items: center;
+    }
+
+    .project-card.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .project-media {
+        flex: 1;
+    }
+
+    .project-media img,
+    .project-media video {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-content {
+        flex: 1;
+    }
+
+    .project-content h2 {
+        margin-bottom: 1rem;
+        color: #333;
+    }
+
+    .project-content p {
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+
+    .project-details {
+        list-style: none;
+        padding: 0;
+    }
+
+    .project-details li {
+        margin-bottom: 0.5rem;
+        color: #666;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .project-card,
+        .project-card.reverse {
+            flex-direction: column;
+        }
+
+        .project-media,
+        .project-content {
+            width: 100%;
+        }
+    }
+</style>

@@ -1,0 +1,201 @@
+<h1 style="text-align: center; color: #4CAF50; margin: 2rem 0; text-shadow: 0 0 10px rgba(76, 175, 80, 0.3); font-size: 3rem; background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('abstract-background-with-neon-lights_441797-763.avif') center/cover; padding: 2rem; border-radius: 10px;">Unity Projects</h1>
+
+<div class="project-container">
+    <div class="project-card">
+        <div class="project-grid">
+            <div class="media-section">
+                <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=gVCYWI6s9Aw" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="content-section">
+                <h2>Oparius Game</h2>
+                <p class="project-description">
+                    An action-packed, fast-paced space shooter where players pilot a starfighter to battle waves of enemies, 
+                    dodge projectiles, and defeat epic bosses. Featuring stunning visuals, dynamic combat, and immersive gameplay, Oparius delivers a thrilling interstellar experience.
+                </p>
+                <div class="project-details">
+                    <span class="tag">Unity</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">3D Game</span>
+                </div>
+                <a href="https://gx.games/games/8z54je/operius/" class="project-link">Play Game →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-grid">
+            <div class="media-section">
+                <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=uFKrombLQAc" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="content-section">
+                <h2>Simulation Game</h2>
+                <p class="project-description">
+                    A highly immersive simulation game that challenges players to manage, build, and strategize in a dynamic environment. With realistic mechanics, engaging visuals,
+                    and intricate systems, this game offers a true-to-life experience that keeps players hooked as they create, control, and conquer their world.
+                </p>
+                <div class="project-details">
+                    <span class="tag">Unity</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">3D Game</span>
+                </div>
+                <a href="#" class="project-link">Play Game →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-card">
+        <div class="project-grid">
+            <div class="media-section">
+                <iframe width="100%" height="315" src="https://www.youtube.com/watch?v=XtQMytORBmM" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="content-section">
+                <h2>Unity Tutorial</h2>
+                <p class="project-description">
+                    A challenging puzzle platformer with unique mechanics involving gravity manipulation and time control.
+                    Features hand-crafted levels with increasing difficulty and creative puzzle solutions.
+                </p>
+                <div class="project-details">
+                    <span class="tag">Unity</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">2D Game</span>
+                </div>
+                <a href="#" class="project-link">Play Game →</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.project-container {
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
+                url('gaming-setup.jpg') center/cover fixed;
+    background-blend-mode: overlay;
+    position: relative;
+}
+
+.project-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('controller-pattern.png') repeat;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.project-card:nth-child(even) .project-grid {
+    direction: rtl;
+}
+
+.project-card:nth-child(even) .content-section {
+    direction: ltr;
+}
+
+.media-section iframe {
+    width: 100%;
+    height: 315px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.content-section {
+    color: #ffffff;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+    text-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+.project-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+}
+
+.project-details {
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    background: rgba(76, 175, 80, 0.2);
+    color: #4CAF50;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-right: 0.8rem;
+    font-size: 0.9rem;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.project-link {
+    display: inline-block;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.project-link:hover {
+    color: #69F0AE;
+    transform: translateX(10px);
+}
+
+.project-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #4CAF50;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .project-card:nth-child(even) .project-grid {
+        direction: ltr;
+    }
+}
+</style>
